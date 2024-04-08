@@ -20,7 +20,7 @@ Learning different computer skills and how to use different computer programs is
 Do not be afraid to try things out and explore. You almost certainly will not do any harm by making mistakes – modern software will usually let you undo errors and will warn you before performing potentially damaging actions. 
 Look for patterns. Find the differences and similarities between the ways in which things are done in different software, so you can begin to guess what to expect.
 You will learn a lot by helping other people in addition to getting your own problems solved by them. During this program, you will be able to develop your support network further by using the Internet. E-mail, chat, and the Web all greatly increase the ways in which you can seek help and information and, of course, help others.
-Data Analytics
+# Data Analytics
 Analytics is at the heart of modern business. Virtually every organization collects large quantities of data about its customers, products, employees, and service offerings. Managers naturally seek to analyze that data and harness the information it contains to improve the efficiency, effectiveness, and profitability of their work.
 The ultimate role of a data analyst is to transform raw data into actionable insights that guide decision-making processes within an organization. This involves several key responsibilities and skills.
 
