@@ -114,7 +114,60 @@ Internet of Things (IoT) specialists
 * Whole Numbers - The integer, and all its subtypes, are for storing whole numbers. 
 * Rational Numbers - the numeric data type is for rational numbers that include a decimal point. 
 * Date and Time - road category of date, day of year and time of day are data elements that appear with great frequency.
-* Currency -financial data is numeric, people prefer seeing the numbers displayed as a specific currency. For example, consider the Number, Dollar, and Euro 
+* Currency -financial data is numeric, people prefer seeing the numbers displayed as a specific currency. For example, consider the Number, Dollar, and Euro
+
+# Strong And Weak Typing
+* Strong typing is when technology rigidly enforces data types.
+* Weak typing loosely enforces data types. Spreadsheets use weak typing to help make it easier for people to accomplish their work.
+* Software that uses weak typing can be helpful.
+  
+# Unstructured Data Types
+* Unstructured data is any type of data that does not fit neatly into the tabular model.
+* Examples of unstructured data include digital images, audio recordings, video recordings, and open-ended survey responses.
+*  Analyzing unstructured data creates a wealth of information and insight.
+*  unstructured data type :
+*  Binary
+*  Audio
+*  Images
+*  Video
+*  Large Text
+# Categories of Data
+* Quantitative vs. Qualitative Data - Quantitative data consists of numeric values. Data elements whose values come from counting or measuring are quantitative.Qualitative data consists of frequent text values. Data elements whose values describe characteristics, traits, and attitudes are all qualitative. 
+* Discrete vs. Continuous Data - discrete data is that it represents measurements that can't be subdivided. You may intuitively think of discrete data as using whole numbers, but that doesn't have to be the case. when you measure things like height and weight, you are collecting continuous data. While whole numbers represent discrete data, continuous data typically need a decimal point. 
+* Categorical Data - numeric data, there is categorical data. Text data with a known, finite number of categories is categorical.
+* Dimensional Data - Dimensional modeling organizes data into fact tables and dimension tables. Fact tables store measurement data that is of interest to a business.
+
+# Common Data Structures
+* Structured Data - Tabular data is structured data, with values stored in a consistent, defined manner, organized into columns and rows.
+* Unstructured data is qualitative, describing the characteristics of an event or an object. Images, phrases, audio or video recordings, and descriptive text are all examples of unstructured data. There is very little that is common about different kinds of unstructured data.
+* Machine data is a common source of unstructured data. Machine data has various sources, including Internet of Things devices, smartphones, tablets, personal computers, and servers.
+* Semi-structured data is data that has structure and that is not tabular. Email is a well-known example of semi-structured data.
+
+# Common File Formats
+* Common file formats facilitate data exchange and tool interoperability.
+* Text files are one of the most commonly used data file formats. As the name implies, they consist of plain text and are limited in scope to alphanumeric data.
+*  One of the reasons text files are so widely adopted is their ability to be opened regardless of platform or operating system without needing a proprietary piece of software.
+*  Whether you are using a Microsoft Windows desktop, an Apple MacBook, or a Linux server, you can easily open a text file. Text files are also commonly referred to as flat files.
+*  Fixed-Width Files - are more laborious to create since they require a few extra steps.
+*  JavaScript Object Notation (JSON) is an open standard file format, designed to add structure to a text file without incurring significant overhead.
+*   One of its design principles is that JSON is easily readable by people and easily parsed by modern programming languages.
+*    Languages such as Python, R, and Go have libraries containing functions that facilitate reading and writing JSON files.
+*   extensible Markup Language (XML) is a markup language that facilitates structuring data in a text file.
+*  While conceptually similar to JSON, XML incurs more overhead because it makes extensive use of tags. Tags describe a data element and enclose each value for each data element.
+* While these tags help readability, they add a significant amount of overhead.
+* HyperText Markup Language (HTML) is a markup language for documents designed to be displayed in a web browser.
+*  HTML pages serve as the foundation for how people interact with the World Wide Web. Similar to XML, HTML is a tag-based language.
+
+# CHAPTER THREE - Databases and Data Acquisition
+* two categories categories of a database 1.Relational 2.Nonrelational
+* Relational databases excel at storing and processing structured data.
+* The need to interact with unstructured data is one of the reasons behind the rise of nonrelational databases.
+* 
+
+  
+
+
+
 
 
 
