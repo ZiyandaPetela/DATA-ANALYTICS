@@ -162,8 +162,17 @@ Internet of Things (IoT) specialists
 * two categories categories of a database 1.Relational 2.Nonrelational
 * Relational databases excel at storing and processing structured data.
 * The need to interact with unstructured data is one of the reasons behind the rise of nonrelational databases.
-* 
-
+* Relational model builds on the concept of tabular data. In the relational model, an entity contains data for a single subject.
+* structure has data points and bring out relationship there
+* uses tables to show entities/nouns
+* each table has ID to uniquely identify row
+* benefits are consistency, stored procedures
+* Each of these entities becomes a separate table in the database, with a column for each attribute.
+*  Each row represents an instance of the entity.
+*   The power of the relational model is that it also allows us to describe how entities connect or relate, to each other.
+*   The entity relationship diagram (ERD) is a visual artifact of the data modeling process.
+*    It shows the connection between related entities.
+* a relationship is a connection between entities. The symbols adjacent to an entity describe the relationship.
   
 
 
