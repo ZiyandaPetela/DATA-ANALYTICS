@@ -173,6 +173,17 @@ Internet of Things (IoT) specialists
 *   The entity relationship diagram (ERD) is a visual artifact of the data modeling process.
 *    It shows the connection between related entities.
 * a relationship is a connection between entities. The symbols adjacent to an entity describe the relationship.
+# THE RELATIONAL MODEL
+* The relational model builds on the concept of tabular data. In the relational model, an entity contains data for a single subject.
+* The entity relationship diagram (ERD) is a visual artifact of the data modeling process. It shows the connection between related entities.
+* A relationship is a connection between entities. The symbols adjacent to an entity describe the relationship.
+* Cardinality refers to the relationship between two entities, showing how many instances of one entity relate to instances in another entity.
+* specify cardinality in an ERD with various line endings.
+* The first component of the terminator indicates whether the relationship between two entities is optional or required.
+* The second component indicates whether an entity instance in the first table is associated with a single entity instance in the related table or if an association can exist with multiple entity instances.
+* binary relationship connects two entities,
+* ternary relationship connects three entities.
+* 
   
 
 
