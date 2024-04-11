@@ -183,8 +183,121 @@ Internet of Things (IoT) specialists
 * The second component indicates whether an entity instance in the first table is associated with a single entity instance in the related table or if an association can exist with multiple entity instances.
 * binary relationship connects two entities,
 * ternary relationship connects three entities.
-* 
-  
+
+# Relational Databases
+* Relational databases are pieces of software that let you make an operational system out of an ERD.
+* Relational entities correspond to database tables, and entity attributes correspond to table columns.
+* When creating a database table, the ordering of columns does not matter because you can specify the column order when retrieving data from a table.
+*  When an attribute becomes a column, you assign it a data type. Completing all of this work results in a diagram known as a schema.
+*  To pull data from a relational database table, you perform a query. You compose queries using a programming language called Structured Query Language (SQL).
+*   A join uses data values from one table to retrieve associated data in another table, typically using a foreign key.
+*  Foreign keys enforce referential integrity, or how consistent the data is in related tables
+*   A database administrator (DBA) is a highly trained person who understands how database software interacts with computer hardware.
+*   A DBA looks after how the database uses the underlying storage, memory, and processor resources assigned to the database.
+*  A DBA also looks for processes that are slowing the entire database down.
+*  Microsoft developed SQL Server, and the open source community created offerings including MySQL, MariaDB, and PostgreSQL.
+*  Amazon Web Services (AWS) developed Aurora, which is compatible with MySQL and PostgreSQL.
+*  Aurora is unique because it takes advantage of AWS's underlying cloud platform and is easy to scale.
+
+# Nonrelational Databses
+* A nonrelational database does not have a predefined structure based on tabular data. The result is a highly flexible approach to storing data. However, the data types available in relational databases are absent.
+* Examples of nonrelational databases include key-value, document, column family, and graph.
+
+# Database Use Cases
+* two categories of data processing: Online Transactional Processing (OLTP) and Online Analytical Processing (OLAP).
+* Online Transactional Processing
+* OLTP systems handle the transactions we encounter every day.
+* OLTP systems balance the ability to write and read data efficiently.
+* Normalization
+*  is a process for structuring a database in a way that minimizes duplication of data.
+* One of the principles is that a given piece of data is stored once and only once. As a result, a normalized database is ideal for processing transactions.
+*  First normal form (1NF) is when every row in a table is unique and every column contains a unique value.
+* Second normal form (2NF) starts where 1NF leaves off. In addition to each row being unique, 2NF applies an additional rule stating that all nonprimary key values must depend on the entire primary key.
+* Third normal form (3NF) builds upon 2NF by adding a rule stating all columns must depend on only the primary key. 
+
+# Online Analytical Processing
+* OLAP systems focus on the ability of organizations to analyze data
+* While OLAP and OLTP databases can both use relational database technology, their structures are fundamentally different.
+* OLTP databases need to balance transactional read and write performance, resulting in a highly normalized design. Typically, OLTP databases are in 3NF.
+* Schema Concepts
+* The design of a database schema depends on the purpose it serves.
+* Transactional systems require highly normalized databases, whereas a denormalized design is more appropriate for analytical systems.
+* A data warehouse is a database that aggregates data from many transactional systems for analytical purposes.
+*  Transactional data may come from systems that power the human resources, sales, marketing, and product divisions.
+*  A data warehouse facilitates analytics across the entire company.
+*  A data mart is a subset of a data warehouse.
+*   Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization.
+*  A data lake stores raw data in its native format instead of conforming to a relational database structure.
+*  Using a data lake is more complex than a data warehouse or data mart, as it requires additional knowledge about the raw data to make it analytically useful.
+*  Relational databases enforce a structure that encapsulates business rules and business logic, both of which are missing in a data lake.
+*  The star schema design to facilitate analytical processing gets its name from what the schema looks like when looking at its entity relationship diagram
+*  At the centre of the star is a fact table. Fact tables chiefly store numerical facts about a business.
+*  the schema design centres on reporting on the cost and profitability of procedures.
+*  Qualitative data, including names, addresses, and descriptions, is stored in a series of dimension tables that connect to the main fact table.
+*  When data moves from an OLTP design into a star schema, there is a significant amount of data duplication.
+*   As such, a star schema consumes more space than its associated OLTP design to store the same data.
+*  Another design pattern for data warehousing is the snowflake schema.
+*   Snowflake and star schemas are conceptually similar in that they both have a central fact table surrounded by dimensions. \
+*   Where the approaches differ is in the handling of dimensions. With a star, the dimension tables connect directly to the fact table.
+*    With a snowflake, dimensions have subcategories, which gives the snowflake design its shape.
+*    A snowflake schema is less denormalized than the star schema.
+*    With a snowflake schema, you may need more than one join to get the data you are looking for.
+*  A snowflake schema query is more complex than the equivalent query in a star schema.
+*  Data warehouses often use snowflake schemas, since many different systems supply data to the warehouse.
+*   Data marts are comparatively less complicated, because they represent a single data subject area. As such, data marts frequently use a star-schema approach. 
+
+* Dimensionality
+* Dimensionality refers to the number of attributes a table has. The greater the number of attributes, the higher the dimensionality.
+* A dimension table provides additional context around data in fact tables
+* Handling Dimensionality
+* the start and end date approach - An understanding of this method is required to write a query to retrieve the current price.
+* Another method extends the snowflake approach to modelling dimensions. You have a product dimension for the current price and a product history table for maintaining price history.
+* One advantage of this approach is that it is easy to retrieve the current price while maintaining access to historical information.
+* Another approach is to use an indicator flag - indicator flag method keeps all pricing data in a single place. It also simplifies the query structure to get the current price.
+
+# Data Acquisition Concepts
+* Integration
+* Data from transactional systems flow into data warehouses and data marts for analysis.
+* need to retrieve, reshape, and insert data to move data between operational and analytical environments.
+* One approach is known as extract, transform, and load (ETL).
+* Extract:  In the first phase, you extract data from the source system and place it in a staging area. The goal of the extract phase is to move data from a relational database into a flat file as quickly as possible.
+* Transform:  The second phase transforms the data. The goal is to reformat the data from its transactional structure to the data warehouse's analytical design.
+* Load:  The purpose of the load phase is to ensure data gets into the analytical system as quickly as possible.
+* Extract, load, and transform (ELT) is a variant of ETL.
+*  With ELT, data is extracted from a source database and loaded directly into the data warehouse.
+*  Once the extract and load phases are complete, the transformation phase gets underway.
+*  One key difference between ETL and ELT is the technical component performing the transformation.
+*   With ETL, the data transformation takes place external to a relational database, using a programming language like Python. E
+*   ELT uses SQL and the power of a relational database to reformat the data.
+*   ELT has an advantage in the speed with which data moves from the operational to the analytical database.
+
+
+*   ETL Vendors
+*   An initial load occurs the first time data is put into a data warehouse.
+*   After that initial load, each additional load is a delta load, also known as an incremental load.
+*   A delta load only moves changes between systems.
+
+# Data Collection Methods
+*Application Programming Interfaces (APIs)- is a structured method for computer systems to exchange information. 
+APIs provide a consistent interface to calling applications, regardless of the internal database structure. 
+Whoever calls an API has no idea whether a transactional or analytical data store backs it. The internal data structure does not matter as long as the API returns the data you want. 
+APIs can be transactional, returning data as JSON objects. 
+APIs can also facilitate bulk data extraction, returning CSV files.
+
+* web Services - data is found in private and public data sources and is accessible via a web service.
+*  A web service is an API you can call via Hypertext Transfer Protocol (HTTP), the language of the World Wide Web.
+* Web Scraping - If data exists in a structured format, you can retrieve it programmatically. Programmatic retrieval of data from a website is
+* Human-in-the-Loop - the data you seek exists only in people's minds. 
+* Surveys - urveys consist of one question and indicate customer satisfaction
+* Survey Tools - Qualtrics is a powerful tool for developing and administering surveys.
+* Observation - Observation is the act of collecting primary source data, from either people or machines.
+*  Observational data can be qualitative or quantitative.
+*   Collecting qualitative observational data leads to unstructured data challenges.
+* Sampling - Once you have collected sample data, you can use statistical methods to make generalizations about the entire population
+
+
+
+
 
 
 
