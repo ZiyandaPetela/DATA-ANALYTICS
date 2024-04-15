@@ -302,6 +302,7 @@ APIs can also facilitate bulk data extraction, returning CSV files.
 *   While DDL manages the structure of a database, DML manages the data in the database.
 
 *   Data Manipulation
+
 *   Create new data
 *   Read existing data
 *   Update existing data
@@ -313,7 +314,83 @@ APIs can also facilitate bulk data extraction, returning CSV files.
 *   Delete- DELETE- Removes existing data from an existing table
 
 *  SQL Considerations
-*   
+* The keywords in SQL are case-insensitive.
+* SQL can also span multiple lines.
+* How a query appears is a function of organizational conventions. F
+* actors that influence convention include database configuration, query efficiency, and how easy it is for people to read and understand the query.
+
+# Filtering
+* Filtering is a way to reduce the data down to only the rows that you need.
+* To filter data, you add a WHERE clause to a query
+
+* Filtering and Logical Operators
+* A query can have multiple filtering conditions. use a logical operator to account for complex filtering needs.
+* Complex queries frequently use multiple logical operators at the same time.
+*  It is good to use parentheses around filter conditions to help make queries easy for people to read and understand.
+*  Data warehouses often contain millions, billions, or even trillions of individual data records.
+*  Filtering data is essential to making effective use of these massive data stores.
+
+# Sorting
+* When querying a database, you frequently specify the order in which you want your results to return.
+* The ORDER BY clause is the component of a SQL query that makes sorting possible.
+* do not have to specify the columns you are using to sort the data in the SELECT clause.
+* The ASC keyword at the end of the ORDER BY clause sorts in ascending order whereas using DESC with ORDER BY sorts in descending order.
+*  If you are sorting on multiple columns, you can use both ascending and descending as appropriate.
+*   Both the ASC and DESC keywords work across various data types, including date, alphanumeric, and numeric.
+
+# Date Functions
+* date columns are frequently found in OLAP environments.
+*  Date columns also appear in transactional systems. Storing date information about an event facilitates analysis across time.
+*  The most important thing to note is that you have to understand the database platform you are using and how that platform handles dates and times
+*  Since each platform provider uses different data types for handling this information, you need to familiarize yourself with the functions available from your provider of choice.
+
+# Logical Functions
+* Logical functions can make data substitutions when retrieving data.
+* Remember that a SELECT statement only retrieves data.
+* Another way to generate the output is by using the IFF logical function.
+*  The IFF function has the following syntax: IFF(boolean_expression, true_value, false_value)
+*  Boolean Expression:  The expression must return either TRUE or FALSE.
+*  True Value:  If the Boolean expression returns TRUE, the IFF function will return this value.
+*  False Value:  If the Boolean expression returns FALSE, the IFF function will return this value.
+*  When using logical functions, you need to balance their convenience with the knowledge that you are replacing data from the database with the function's coded values.
+*  The ability to do this type of substitution is a real asset when dividing data into categories.
+
+# Aggregate Functions
+* Summarized data helps answer questions that executives have, and aggregate functions are an easy way to summarize data.
+* Aggregate functions summarize a query's data and return a single value.
+* each database platform supports different aggregation functions
+* COUNT -Returns the total number of rows of a query.
+* MIN - Returns the minimum value from the results of a query. Note that this works on both alphanumeric and numeric data types.
+* MAX - Returns the maximum value from the results of a query. Note that this works on both alphanumeric and numeric data types.
+* AVG - Returns the mathematic average of the results of a query.
+* SUM -Returns the sum of the results of a query.
+* STDDEV- Returns the sample standard deviation of the results of a query.
+* can also use aggregate functions to filter data. For example, you may want a query that shows all employees who make less than the average corporate salary.
+*  Aggregate functions also operate across subsets of data. For instance, you can calculate total sales by month with a single query.
+
+# System Functions
+* Each database platform offers functions that expose data about the database itself.
+*  One of the most frequently used system functions returns the current date.
+*   The current date is a component of transactional records and enables time-based analysis in the future.
+*    The current date is also necessary for a system that uses an effective date approach.
+*    System functions also return data about the database environment. 
+
+* Query Optimization
+* Parametrization - Whenever a SQL query executes, the database has to parse the query. Parsing translates the human-readable SQL into code the database understands.
+* Parsing takes time and impacts how long it takes for a query to return data. Effective use of parameterization reduces the number of times the database has to parse individual queries.
+* Indexing -  A database index works like the index in the back of a book.
+* Instead of looking at each page in a book to find what you are looking for, you can find a specific page number in the index and then go to that page.
+A database index can point to a single column or multiple columns. When running queries on large tables, it is ideal if all of the columns you are retrieving exist in the index.
+If that is not feasible, you at least want the first column in your SELECT statement to be covered by an index.
+* While indexing improves query speed, it slows down create, update, and delete activity.
+*  An indexing strategy needs to match the type of system the database supports, be it transactional or reporting.
+*  Data Subsets and Temporary Tables - It is possible to create a temporary table to make the data more manageable.
+*   Temporary tables can store the results of a query and are disposable. Temporary tables automatically get removed when the active session ends. Using temporary tables is an effective method of creating subsets for ad hoc analysis.
+*   Execution Plan - An execution plan shows the details of how a database runs a specific query.
+*   Execution plans are extremely helpful in troubleshooting query performance issues. They provide additional information about how a query is spending its time. For example, an execution plan can tell you if a slow-running query uses a full table scan instead of an index scan. I
+
+
+
 
 
 
