@@ -387,7 +387,7 @@ If that is not feasible, you at least want the first column in your SELECT state
 *  Data Subsets and Temporary Tables - It is possible to create a temporary table to make the data more manageable.
 *   Temporary tables can store the results of a query and are disposable. Temporary tables automatically get removed when the active session ends. Using temporary tables is an effective method of creating subsets for ad hoc analysis.
 *   Execution Plan - An execution plan shows the details of how a database runs a specific query.
-*   Execution plans are extremely helpful in troubleshooting query performance issues. They provide additional information about how a query is spending its time. For example, an execution plan can tell you if a slow-running query uses a full table scan instead of an index scan. I
+*   Execution plans are extremely helpful in troubleshooting query performance issues. They provide additional information about how a query is spending its time. For example, an execution plan can tell you if a slow-running query uses a full table scan instead of an index scan. 
 
 
 
