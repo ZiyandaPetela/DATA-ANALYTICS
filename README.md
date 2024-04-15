@@ -295,6 +295,26 @@ APIs can also facilitate bulk data extraction, returning CSV files.
 *   Collecting qualitative observational data leads to unstructured data challenges.
 * Sampling - Once you have collected sample data, you can use statistical methods to make generalizations about the entire population
 
+# Working With Data
+* To turn a database design into an operational database ready to accept data, use the Data Definition Language (DDL) components of SQL.
+*  DDL lets you create, modify, and delete tables and other associated database objects.
+*  To generate insights, a productive analyst must be comfortable using the Data Manipulation Language (DML) capabilities of SQL to insert, modify, and retrieve information from databases.
+*   While DDL manages the structure of a database, DML manages the data in the database.
+
+*   Data Manipulation
+*   Create new data
+*   Read existing data
+*   Update existing data
+*   Delete existing data.
+
+*   Create - INSERT - Creates new data in an existing table
+*   Read - SELECT - Retrieves data from an existing table
+*   Update - UPDATE- Changes existing data in an existing table
+*   Delete- DELETE- Removes existing data from an existing table
+
+*  SQL Considerations
+*   
+
 
 
 
