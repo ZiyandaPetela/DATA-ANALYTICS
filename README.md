@@ -390,8 +390,83 @@ If that is not feasible, you at least want the first column in your SELECT state
 *   Execution plans are extremely helpful in troubleshooting query performance issues. They provide additional information about how a query is spending its time. For example, an execution plan can tell you if a slow-running query uses a full table scan instead of an index scan. 
 
 
+# CHAPTER FOUR - DATA QUALITY
+* Businesses need high-quality data to create the kinds of analysis that organizations rely on for decision-making.
+* While the data we use in these analyses is not ever perfect, understanding the limitations of each dataset you use will help you identify any data transformation work that you must complete before proceeding with analysis.
+
+# Data Quality Challenges
+* Duplicate Data -occurs when data representing the same transaction is accidentally duplicated within a system. 
+* Humans are primarily responsible for creating duplicate data.
+*  System architects work diligently to prevent duplicate data from being created.
+*  The best way to resolve duplicate data is to prevent its creation in the first place.
+*  One common approach to stopping duplicate data before it gets into a system is a visual warning to alert users.
+*   Having multiple data sources for the same data elements is also a source of duplicate data. 
 
 
+* Redundant Data
+* While duplicate data typically comes from accidental data entry, redundant data happens when the same data elements exist in multiple places within a system.
+* data redundancy is a function of integrating multiple systems.
+* One approach to reolve redundant data is to synchronizes changes to shared data elements between the Accounting and Sales systems.
+*  However, technical or political realities can make synchronizing source systems unfeasible.
+*  Another root cause of data redundancy is an inappropriate database design. 
+
+* Missing Values
+*  Missing values occur when you expect an attribute to contain data but nothing is there.
+*  Missing values are also known as null values.
+*   A null value is the absence of a value. A null is not a space, blank, or other character.
+*   When a column optionally contains data, it is nullable, meaning the column can contain null values.
+*    However, be aware that having nulls in a dataset poses calculation challenges.
+*    Null values present several challenges depending on the tools you use to analyze data.
+*    To handle missing values, you first have to check for their existence. SQL offers functions to check for null and functions that can replace a null with a user-specified value.
+*    There are similar functions in both Python and R.
+
+*  Invalid Data
+*  Invalid data are values outside the valid range for a given attribute.
+*   An invalid value violates a business rule instead of having an incorrect data type.
+*   As such, you have to understand the context of a system to determine whether or not a value is invalid.
+*   Invalid values violate business rules, not technical rules.
+*    As such, programming languages do not have native functions that definitively tell you whether or not a given value is invalid.
+*    When considering data types, numeric and date data is comparatively easy to check for invalid values.
+*    One thing that leads to invalid character data is an absence of referential integrity within a database.
+
+*    Nonparametric Data
+*   Nonparametric data is data collected from categorical variables
+
+*  Data Outliers
+*  A data outlier is a value that differs significantly from other observations in a dataset.
+* With outliers, you need to understand why they exist and whether they are valid in the context of your analysis.
+* Outliers exist regardless of data type.
+
+* Specification Mismatch
+* A specification describes the target value for a component.
+*  A specification mismatch occurs when an individual component's characteristics are beyond the range of acceptable values.
+*  a specification mismatch occurs when data does not conform to its destination data type. For example, you might be loading data from a file into a database.
+*   If the destination column is numeric and you have text data, you'll end up with a specification mismatch.
+*   To resolve this mismatch, you must validate that the inbound data consistently maps to its target data type.
+
+*   Data Type Validation
+*  Data type validation ensures that values in a dataset have a consistent data type.
+*  How the load process handles the data type validation failure determines whether or not the remaining rows load successfully.
+*  Depending on the tool, a single failure may cause the load process to stop.
+*  Alternatively, the load process might write each failed record to an error file before loading the remaining records.
+*  Programming languages, including SQL, Python, and R, all have data type validation functions.
+*   Use these functions to validate the data type for each column in a data file before attempting a database load.
+*    detect and remediate data type issues as early as possible to ensure data is ready for analysis.
+
+
+# Data Manipulation Techniques
+* Recoding Data
+*  is a technique you can use to map original values for a variable into new values to facilitate analysis.
+*   Recoding groups data into multiple categories, creating a categorical variable. A categorical variable is either nominal or ordinal.
+*   Nominal variables are any variable with two or more categories where there is no natural order of the categories, like hair color or eye color.
+*   Ordinal variables are categories with an inherent rank. For example, T-shirt size is an example of an ordinal variable, as sizes come in small, medium, large, and extra-large.
+*   Recoding is helpful when you have numeric data you want to analyze by category.
+
+*   Derived Variables
+*   A derived variable is a new variable resulting from a calculation on an existing variable.
+
+*  Data Merge
+*   
 
 
 
