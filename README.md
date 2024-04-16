@@ -466,9 +466,110 @@ If that is not feasible, you at least want the first column in your SELECT state
 *   A derived variable is a new variable resulting from a calculation on an existing variable.
 
 *  Data Merge
-*   
+*   data merge uses a common variable to combine multiple datasets with different structures into a single dataset.
+*    Merging data improves data quality by adding new variables to your existing data.
+*    Additional variables make for a richer dataset, which positively impacts the quality of your analysis.
+*    ETL processes commonly append data while transforming data for use in analytical environments.
+*    Since a data merge adds columns to a dataset, merging gives you additional data about a specific observation.
 
+*    Data Blending
+*    Data blending combines multiple sources of data into a single dataset at the reporting layer.
+*    While data blending is conceptually similar to the extract, transform, and load process
+*    ETL processes operate on a schedule, copying data from source systems into analytics environments.
+*    Business requirements drive the scheduling, such as near real-time, hourly, daily, weekly, monthly, or annually. Typically, an organization's IT department designs, builds, operates, and maintains ETL processes.
+*    Data blending differs from ETL in that it allows an analyst to combine datasets in an ad hoc manner without saving the blended dataset in a relational database.
+*  Instead of the blended dataset persisting over time, it exists only at the reporting layer, not in the source databases.
+*  data visualization tools such as Tableau allow analysts to connect to different source systems and blend the data using a shared attribute.
+*   Data blending can reduce the burden on IT as it gives analysts the ability to merge data.
+*   With the traditional ETL workflow, the analyst needs to understand the data warehouse's structure to create a visualization.
+*   For routine analysis, such as weekly profitability, the ETL approach works well.
+*   ETL/ELT processes are programmatic and operate on a schedule, resulting in a merged dataset that persists at the data layer.
+*    After creation, ETL/ELT processes perform the same action on a routine basis. While conceptually similar, data blending combines data at the visualization layer and allows an analyst to integrate additional data sources in an ad hoc, exploratory manner.
+*  ETL/ELT connects data at the database layer whereas data blending connects data at the visualization layer.
 
+*  Concatenation
+*  Concatenation is the merging of separate variables into a single variable.
+*   Concatenation is a highly effective technique when dealing with a source system that stores components of a single variable in multiple columns.
+*    The need for concatenation frequently occurs when dealing with date and time data. Concatenation is also useful when generating address information.
+*    Combining this data is a straightforward activity, as programming languages, including SQL, Python, and R, have functions that make concatenation easy.
+
+*    Data Append
+*    data append combines multiple data sources with the same structure, resulting in a new dataset containing all the rows from the original datasets.
+*    When appending data, you save the result as a new dataset for ongoing analysis.
+
+*    Imputation
+*    Imputation is a technique for dealing with missing values by replacing them with substitutes.
+*    When merging multiple data sources, you may end up with a dataset with many nulls in a given column.
+*    If you are collecting sensor data, it is possible to have missing values due to collection or transmission issues.
+* approaches an analyst can use for imputing values:
+*      Remove Missing Data:  With this approach, you can remove rows with missing values without impacting the quality of your overall analysis.
+*     Replace with Zero:  With this approach, you replace missing values with a zero. Whether or not it is appropriate to replace missing data with a zero is contextual.
+*     Replace with Overall Average:  Instead of using a zero, you can compute the average Weight value for all rows that have data and then replace the missing Weight values with that calculated average.
+*     Replace with Most Frequent (Mode):  Alternatively, you can take the most frequently occurring value, called the mode, and use that as the constant
+*     Closest Value Average:  With this approach, you use the values from the rows before and after the missing values. 
+
+* Reduction
+* When dealing with big data, it is frequently unfeasible and inefficient to manipulate the entire dataset during analysis.
+*  Reduction is the process of shrinking an extensive dataset without negatively impacting its analytical value.
+*  There are a variety of reduction techniques from which you can choose. Selecting a method depends on the type of data you have and what you are trying to analyze.
+*   Dimensionality reduction and numerosity reduction are two techniques for data reduction.
+
+*   Dimensionality Reduction
+*   One reduction technique is dimensionality reduction, which removes attributes from a dataset. Removing attributes reduces the dataset's overall size.
+*    can use any programming language, including Python or R, to remove dimensions.
+
+*    Numerosity Reduction
+*    Another technique is numerosity reduction, which reduces the overall volume of data.
+*    As data volumes grow, numerosity reduction can improve the efficiency of your analysis.
+*    One way to reduce the volume of quantitative data is by creating a histogram.
+*    can create a histogram in Python, R, and many visualization-specific tools.
+*    A histogram is a diagram made up of rectangles, or bars, that show how frequently a specific value occurs.
+
+*    Aggregation
+*    Data aggregation is the summarization of raw data for analysis.
+*    Aggregating data provides answers that help make decisions
+*    Aggregation is also a means of controlling privacy.
+
+*    Transposition
+*    Transposing data is when you want to turn rows into columns or columns into rows to facilitate analysis.
+* Combining aggregation with transposition is a powerful data manipulation technique.
+*  With this approach to organizing the data, you get a column for each fiscal year and total sales for each salesperson by territory.
+*  This data representation makes it easy to view performance across fiscal years at a glance. This format also makes it easier to visualize data
+
+* Normalization
+* normalizing data converts data from different scales to the same scale.
+*  If you want to compare columns whose measurements use different units, you want to normalize the data.
+*  After normalization is complete, the dataset is ready for statistical analysis.
+
+* Parsing/String Manipulation
+* Raw data can contain columns with composite or distributed structural issues.
+*  A composite issue is when a raw data source has multiple, distinct values combined within a single character column.
+*  When this happens, each value in a composite column has data that represents more than one attribute. Composite columns need to be split into their component parts to aid nalysis.
+*  You also may need to manipulate string data to improve data quality.
+
+#   Managing Data Quality
+
+* Circumstances to Check for Quality
+* Errors during data acquisition, transformation, manipulation, and visualization all contribute to degrading data quality.
+* Must recognize the types of quality issues that can occur and have an overarching strategy to ensure the quality of your data.
+* Data Acquisition, Data Transformation and Conversion, Data Manipulation, Final Product Preparation
+
+* Automated Validation
+*  Whether source data is machine- or human-generated, one way to prevent data entry mistakes from adversely impacting data quality is to automate data validation checks.
+*  Before automatically validating input data, you need to understand how source data fields map to their corresponding database columns.
+*   When mapping input data, pay close attention to the data types in the database. For example, suppose you have a web form where customers supply phone numbers, and the destination database uses a numeric data type to store phone
+
+*  Data Quality Dimensions
+*   It is essential to consider multiple attributes of data when considering its quality. Six dimensions to take into account when assessing data quality are accuracy, completeness, consistency, timeliness, uniqueness, and validity.
+
+*  Data Quality Rules and Metrics
+*  With an understanding of data quality dimensions, you need to consider how to measure each of them in your quest to improve overall quality.
+*    data conformity, which encompasses elements of accuracy, consistency, uniqueness, and validity.
+*  When consolidating data from multiple source systems into an analytics environment, one factor you want to assess is the conformity or nonconformity of data.
+*  If source data does not match the destination data type size and format, you have nonconformity.
+
+*  Methods to Validate Quality
+*  
 
 
 
