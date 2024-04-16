@@ -592,7 +592,97 @@ If that is not feasible, you at least want the first column in your SELECT state
 *  Cross-validation is a statistical technique that evaluates how well predictive models perform. Cross-validation works by dividing data into two subsets.
 *  The first subset is the training set, and the second is the testing, or validation, set.
 *   use data from the training set to build a predictive model.
-*  cross-validate the model using the testing subset to determine how accurate the prediction is. Cross-validation is also helpful in identifying data sampling issues.  
+*  cross-validate the model using the testing subset to determine how accurate the prediction is. Cross-validation is also helpful in identifying data sampling issues.
+*  
+
+# CHAPTER FIVE : Data Analysis and Statistics
+
+* Fundamentals of Statistics
+* core statistical concepts
+
+* population represents all the data subjects you want to analyze.
+* sample is a subset of the population.
+* variable is a unique attribute of a data subject.
+* Univariate analysis is when you explore the characteristics of a single variable, independent of the rest of the dataset.
+* An observation is an individual record in a dataset corresponding to a tabular data row.
+*  sample size is the number of observations you select from the population.
+*  The larger the sample size, the more confident you can be that the results of your analysis accurately describe the population.
+* statistic is a numeric representation of a property of a sample.
+*  use statistics to infer estimates about the population as a whole.
+*  also use a sample statistic to estimate a population parameter.
+*   parameter is a numeric representation of a property for the population.
+*   Just as statistics summarize sample information, parameters summarize the entire population.
+
+*   Common Symbols in Statistics
+*   Statistics is all about exploring numbers and performing calculations
+*   
+Symbol in statistics
+* x-A variable
+
+StartAbsoluteValue x EndAbsoluteValue
+
+Absolute value of a variable
+The absolute value of a number is always positive, so StartAbsoluteValue negative 5 EndAbsoluteValue equals 5.
+
+upper Sigma
+
+Summation For example, sigma-summation x Subscript i denotes adding all observations of a variable together.
+
+N
+
+Population size
+
+mu
+
+Population mean
+
+sigma squared
+
+Population variance
+
+sigma
+
+Population standard deviation
+
+n
+
+Sample size
+
+x overbar
+
+Sample mean
+
+x overTilde
+
+Sample median
+
+s squared
+
+Sample variance
+
+s
+
+Sample standard deviation
+
+upper C
+
+Confidence level value
+
+upper Z
+
+Standardized score
+
+alpha
+
+Significance level
+
+upper Z Subscript StartFraction alpha Over 2 EndFraction
+
+Critical value for a confidence interval level
+
+r
+
+Pearson correlation coefficient
 
 
 
