@@ -615,74 +615,25 @@ If that is not feasible, you at least want the first column in your SELECT state
 
 *   Common Symbols in Statistics
 *   Statistics is all about exploring numbers and performing calculations
-*   
-Symbol in statistics
+*   Symbol in statistics
 * x-A variable
+* StartAbsoluteValue x EndAbsoluteValue - Absolute value of a variable
+* The absolute value of a number is always positive, so StartAbsoluteValue negative 5 EndAbsoluteValue equals 5.
+* upper Sigma - Summation For example, sigma-summation x Subscript i denotes adding all observations of a variable together.
+* N- Population size
+* mu- Population mean
+* sigma squared -Population variance
+* sigma -Population standard deviation
+* n -Sample size
+* x overbar- Sample mean
+* x overTilde- Sample median
+* s squared -Sample variance
+* s- Sample standard deviation
+* upper C- Confidence level value
+* upper -Standardized score
+* alpha - Significance level
+* upper Z Subscript StartFraction
 
-StartAbsoluteValue x EndAbsoluteValue
-
-Absolute value of a variable
-The absolute value of a number is always positive, so StartAbsoluteValue negative 5 EndAbsoluteValue equals 5.
-
-upper Sigma
-
-Summation For example, sigma-summation x Subscript i denotes adding all observations of a variable together.
-
-N
-
-Population size
-
-mu
-
-Population mean
-
-sigma squared
-
-Population variance
-
-sigma
-
-Population standard deviation
-
-n
-
-Sample size
-
-x overbar
-
-Sample mean
-
-x overTilde
-
-Sample median
-
-s squared
-
-Sample variance
-
-s
-
-Sample standard deviation
-
-upper C
-
-Confidence level value
-
-upper Z
-
-Standardized score
-
-alpha
-
-Significance level
-
-upper Z Subscript StartFraction alpha Over 2 EndFraction
-
-Critical value for a confidence interval level
-
-r
-
-Pearson correlation coefficient
 
 
 
