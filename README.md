@@ -738,7 +738,7 @@ If that is not feasible, you at least want the first column in your SELECT state
 *   When exploring a dataset, recall that outliers can have a significant impact on mean and range.
 *    Using the IQR as a dispersion indicator, in addition to the range, improves your perspective since the IQR excludes outliers.
 
-*    INFERENTIAL STATISTICS
+  # INFERENTIAL STATISTICS
 *    Inferential statistics is a branch of statistics that uses sample data to draw conclusions about the overall population.
 
 *  Confidence Intervals
@@ -770,7 +770,7 @@ If that is not feasible, you at least want the first column in your SELECT state
 *   Perfect correlation is when r has a value of either –1 or 1, implying that every data point falls directly on the regression line. Interpreting correlation strength depends on the industry.
 *  When evaluating the correlation between variables, one thing to keep in mind is that it does not imply causation.
 
-* ANALYSIS TECHNIQUES
+  # NALYSIS TECHNIQUES
 * Determine Type of Analysis
 * When embarking on a new analytics challenge, you need to understand the business objectives and desired outcomes.
 *  This understanding informs the type of analysis you will conduct.
@@ -792,8 +792,7 @@ If that is not feasible, you at least want the first column in your SELECT state
 *  Performance analysis examines defined goals and measures performance against them and can inform the development of future projections.
 *  Performance analysis can identify whether properties are achieving those goals.
 *  Combining performance analysis with trend analysis can help develop projections for the future.
-
-* Exploratory Data Analysis
+# Exploratory Data Analysis
 *   An exploratory data analysis (EDA) uses descriptive statistics to summarize the main characteristics of a dataset, identify outliers, and give you context for further analysis.
 
 *  approaches to conducting an EDA:
@@ -822,7 +821,7 @@ If that is not feasible, you at least want the first column in your SELECT state
 * Excel  allows users to perform calculations and visualizations on their data.
 *  Cloud-based spreadsheets such as Google Sheets are also quite popular because they make it easy for multiple people to collaborate on the same spreadsheet.
 
-*  Programming Languages
+# Programming Languages
 *  Programming languages allow skilled software developers to write their own instructions to the computer, allowing them to directly specify the actions that should take place during the analytics process.
 
 *  R
@@ -856,12 +855,22 @@ If that is not feasible, you at least want the first column in your SELECT state
 * Utilities like Azure Data Studio can do more than just retrieve data.
 * They also offer a graphical way for database administrators to reconfigure a database.
 * You can click through a series of menus to choose the changes you'd like to make to the database and the utility writes SQL commands that carry out your requests and sends them to the database.
-*  computer software can interact with databases programmatically. This  means that software can send SQL commands to the database as part of its activity. 
- 
+*  computer software can interact with databases programmatically. This  means that software can send SQL commands to the database as part of its activity.
 
+ # Statistics Packages
+* software packages go beyond the simple statistical analyses that are possible in spreadsheets and provide access to advanced statistical environments that are accessible through a graphical user interface and/or a built-in scripting language.
+* These software packages may be used by anyone interested in data analysis, but the reality is that they are mainly the domain of professional statisticians.
 
-
-
+* IBM SPSS
+*  SPSS is one of the oldest statistical software packages,
+*  offers advanced statistical analysis, a vast library of machine learning algorithms, text analysis, open-source extensibility, integration with big data and seamless deployment into applications.
+*  Its ease of use, flexibility and scalability make SPSS accessible to users of all skill levels.
+*  What’s more, it’s suitable for projects of all sizes and levels of complexity, and can help you find new opportunities, improve efficiency and minimize risk.
+*   IBM SPSS Statistics supports a top-down, hypothesis testing approach to your data, while IBM SPSS Modeler exposes patterns and models hidden in data through a bottom-up, hypothesis generation approach.
+*   SPSS benefits
+*   Intuitive user interface - Prepare and analyze data with an easy-to-use interface without having to write code.
+*   Flexible licensing option-  choose from purchase options including subscription and traditional licenses.
+*   Boost data science productivity-Empower coders, noncoders and analysts with visual data science tools.
 
 
 
