@@ -803,9 +803,61 @@ If that is not feasible, you at least want the first column in your SELECT state
 * Identify Outliers:   outliers can dramatically impact some descriptive statistics, like the mean. It would be best to determine the cause of outliers and consider whether you want to leave them in the data before proceeding with any ongoing analysis.
 * Summarize Statistics:  Calculate summary statistics for each variable. For numeric variables, examples of summary statistics include mean, median, and variance. For categorical data like eye colour, you could develop a table showing the frequency with which each observation occurs.
 * Check Assumptions:  Depending on the statistical method you are using, you need to understand the shape of the data. For example, if you are working with numeric data, you should choose a normal or t-distribution for drawing inferences. If you are working with categorical data, use the chi-square distribution.
-# 
 
+# DATA ANALYTICS TOOLS- CHAPTER 6
+* When you are selecting a tool you shouls consider.
+* First, you need the right tool for the job. an analytics professional would not use a spreadsheet to create a machine-learning model.
+* Second, you need to choose from the tools available to you. Many analytics tools come with hefty price tags and organizations only license a small subset of them to control costs. Standardizing on a subset of tools also helps improve the ability of teams to work together.
 
+* Spreadsheets
+* spreadsheet software is installed on pretty much every computer in the modern work environment, and web-based spreadsheets are freely available to anyone.
+* Spreadsheets are productivity software packages that allow users to create documents that organize any type of data into rows and columns.
+* Users may place any data they like in the spreadsheet and then quickly and easily perform mathematical calculations, such as finding the sum of the values in a row or searching out the minimum, maximum, mean, and median values in a dataset.
+* Spreadsheets lack any of the constraints of a relational database.
+* While you can certainly organize data in a spreadsheet, there's no requirement that you do so.
+*  If you'd like, you can mix numbers, text, dates, and other data elements all in the same column.
+*   Microsoft Excel is the most commonly used desktop spreadsheet application.
+*    It is available as a component of the widely deployed Microsoft Office productivity suite and most modern knowledge workers have access to it.
+*    spreadsheet is organized in the same way you might organize a database table - each column represents a particular data element recorded about each inspection and each row represents a single inspection event.
+* Excel  allows users to perform calculations and visualizations on their data.
+*  Cloud-based spreadsheets such as Google Sheets are also quite popular because they make it easy for multiple people to collaborate on the same spreadsheet.
+
+*  Programming Languages
+*  Programming languages allow skilled software developers to write their own instructions to the computer, allowing them to directly specify the actions that should take place during the analytics process.
+
+*  R
+*   R programming language is extremely popular among data analysts because it is focused on creating analytics applications
+*    it is available to everyone as a free, open-source language developed by a community of committed developers.
+*    This approach broke the mold of past approaches to analytic tools that relied on proprietary, commercial software that was often out of the financial reach of many individuals and organizations.
+* One of the most important advances in the R language was the creation of a set of R packages known as the tidyverse by Hadley Wickham and other developers
+* The tidyverse approach to data analysis simplifies the use of the language and makes it accessible to anyone willing to invest a few hours in learning some basic syntax.
+* Modern R developers choose to write, test, and deploy their code using an integrated development environment (IDE) called RStudio.
+
+* Python
+* major difference between Python and R is that Python is a general-purpose programming language. This means that it is capable of creating software to meet just about any need you might imagine. can do everything from code a video game to perform a complex data analysis in Python.
+* Python also has specialized libraries that focus on the needs of analysts and data scientists
+* the Python Data Analysis Library (pandas) provides a set of tools for structuring and analyzing data.
+
+* Structured Query Language (SQL)
+* The Structured Query Language (SQL) is the language of databases.
+*  Any time a developer, administrator, or end user interacts with a database, that interaction happens through the use of a SQL command.
+*  major sublanguages of SQL :
+*  Data Definition Language (DDL) is used mainly by developers and administrators. It's used to define the structure of the database itself. It doesn't work with the data inside a database, but it sets the ground rules for the database to function.
+*   Data Manipulation Language (DML) is the subset of SQL commands that are used to work with the data inside of a database. They do not change the database structure, but they add, remove, and change the data inside a database.
+
+* our DML commands:
+* SELECT command is used to retrieve information from a database. It is the most commonly used command in SQL as it is used to pose queries to the database and retrieve the data that you're interested in working with.
+* INSERT command is used to add new records to a database table. If you are adding a new employee, customer order, or marketing activity, the INSERT command allows you to add one or more rows to your database.
+* UPDATE command is used to modify rows in the database. If you need to change something that is already stored in your database, the UPDATE command will do that.
+* DELETE command is used to delete rows from a database table. Don't confuse this command with the DROP command. The DROP command deletes an entire database table, whereas the DELETE command just deletes certain rows from the table.
+
+* a developer, administrator, or power user who knows SQL might directly access the database server and send it a SQL command for execution.
+* This often happens through a graphical user interface, such as the Azure Data Studio interface
+* Utilities like Azure Data Studio can do more than just retrieve data.
+* They also offer a graphical way for database administrators to reconfigure a database.
+* You can click through a series of menus to choose the changes you'd like to make to the database and the utility writes SQL commands that carry out your requests and sends them to the database.
+*  computer software can interact with databases programmatically. This  means that software can send SQL commands to the database as part of its activity. 
+ 
 
 
 
