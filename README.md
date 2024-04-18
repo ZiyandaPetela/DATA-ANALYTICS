@@ -633,6 +633,91 @@ If that is not feasible, you at least want the first column in your SELECT state
 * upper -Standardized score
 * alpha - Significance level
 * upper Z Subscript StartFraction
+* 
+# Descriptive Statistics
+* Descriptive statistics  summarizes and describes data. 
+* Use descriptive statistics as measures to help  understand the characteristics of dataset.
+
+* Measures of Frequency
+* Measures of frequency help you understand how often something happens.
+
+* Count - Count function in everything from spreadsheets to programming languages.
+* Understanding the total number of observations is a frequently performed task.
+* Google Sheet - counta(cell range) - Counts the number of values in a dataset, excluding null values
+* Microsoft Excel - counta(cell range) - Counts the number of values in a dataset, excluding null values
+* SQL - count(*) -Counts the number of rows in a table
+* R - nrow(data frame) -Counts the number of rows in a data frame
+* Python - len(data frame) - Counts the number of rows in a data frame
+
+* Percentage
+* percentage is a frequency measure that identifies the proportion of a given value for a variable with respect to the total number of rows in the dataset.
+* To calculate a percentage, need the total number of observations and the total number of observations for a specific value of a variable.
+* Exploring percentages also gives you a better understanding of the composition of your data and can help identify any biases in your dataset.
+*  When data has a bias, your sample data isn't representative of the overall population you are studying.
+*  Understanding proportions across a dataset aids in determining how you proceed with your analysis.
+
+* Frequency
+* Frequency describes how often a specific value for a variable occurs in a dataset.
+* typically explore frequency when conducting univariate analysis.
+*  The histogram is an optimal way to visualize frequency for continuous data.
+
+* Measures of Central Tendency
+*  use measures of central tendency to identify the central, or most typical, value in a dataset.
+*   There are numerous ways to measure central tendency, and you end up using them in conjunction with each other to understand the shape of your data.
+*   Mean
+* mean, or average, is a measurement of central tendency that computes the arithmetic average for a given set of numeric values.
+*  To calculate the mean, you take the sum of all values for an observation and divide by the number of observations.
+*  Data analysis tools, including spreadsheets, programming languages, and visualization tools, all have functions that calculate the mean.
+*  While the mean is one of the most common measurements of central tendency, remember that you can only calculate a mean for quantitative data.
+*  be mindful of the effect outliers have on the mean's value. An outlier is a value that differs significantly from the other values of the same observation.
+*  It is a best practice to check your data and account for outliers when using the mean.
+
+* Median
+* median identifies the midpoint value for all observations of a variable.
+*  The first step to calculating the median is sorting your data numerically.
+*  Once you have an ordered list of values, the next step depends on whether you have an even or an odd number of observations for a variable.
+*  Identifying the median for an odd number of observations is straightforward—you just select the number in the middle of the ordered list of values.
+*  Mathematically, you add one to the total number of values, divide by 2, and retrieve the value for that observation.
+* For datasets with an even number of observations, you need to take the average of the two observations closest to the midpoint of the ordered list.
+
+* Mode
+* mode is a variable's most frequently occurring observation.
+* Depending on  data, you may not have a mode
+* Depending on the level of precision and amount of data, the mode may not facilitate insight when working with numeric data.
+* the mode is more applicable when working with categorical data.
+
+* Measures of Dispersion
+* five common measures of dispersion:
+* RANGE
+*  range of a variable is the difference between its maximum and minimum values.
+*  Understanding can help you determine what to do with outlier values.
+*   It can also identify invalid values in your data. Spreadsheets and programming languages have functions available to identify minimum and maximum values.
+
+*   DISTRIBUTION
+*    probability distribution, or distribution, is a function that illustrates probable values for a variable, and the frequency with which they occur.
+*  Histograms are an effective tool to visualize a distribution, because the shape provides additional insight into your data and how to proceed with analysis.
+*  Distributions have many possible shapes, including normal, skewed, and bimodal.
+*  Normal Distribution -  normal distribution is symmetrically dispersed around its mean, which gives it a distinctive bell-like shape. Due to its shape, the normal distribution is also known as a “bell curve.”
+*  is applicable across a number of disciplines due to the central limit theorem (CLT), a foundational theorem for statistical analysis.
+*  According to the CLT, as sample size increases, it becomes increasingly likely that the sampling distribution of all those means will be normally distributed.
+*  The sampling distribution of the mean will be normal regardless of sample size if the parent population is normal. However, if you have a skewed parent population, then having a “sufficiently large” sample size may be needed to get a normally distributed sampling distribution.
+*   Most people define sufficiently large as 30 or more observations in your sample. Because of the CLT, the normal distribution applies across a wide variety of attributes.
+* Skewed Distribution
+* skewed distribution has an asymmetrical shape, with a single peak and a long tail on one side.
+* Skewed distributions have either a right (positive) or left (negative) skew. When the skew is to the right, the mean is typically greater than the median. On the other hand, a distribution with a left skew typically has a mean less than the median.
+* Bimodal Distribution
+* bimodal distribution has two distinct modes, whereas a multimodal distribution has multiple distinct modes.
+* When you visualize a bimodal distribution, you see two separate peaks.
+* Variance
+* Variance is a measure of dispersion that takes the values for each observation in a dataset and calculates how far away they are from the mean value.
+* This dispersion measure indicates how spread out the data is in squared units. Mathematically,  signifies population variance, which you calculate by taking the average squared deviation of each value from the mean
+* Standard Deviation
+* Standard deviation is a statistic that measures dispersion in terms of how far values of a variable are from its mean.
+* standard deviation is the average deviation between individual values and the mean. Mathematically,  signifies population standard deviation, which you calculate by taking the square root of the variance
+* calculating variance is an important step on the way to determining standard deviation. Similar to variance, the standard deviation is a measure of volatility, with a low value implying stability. Standard deviation is a popular statistic because of the empirical rule. Also known as the three-sigma rule, the empirical rule states that almost every observation falls within three standard deviations of the mean in a normal distribution.
+
+
+
 
 
 
