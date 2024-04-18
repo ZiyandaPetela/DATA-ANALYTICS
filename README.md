@@ -802,7 +802,8 @@ If that is not feasible, you at least want the first column in your SELECT state
 *  Check if Data Is Missing:  Check to see if any data is missing from the dataset and determine what to do next. While checking for null values, calculate the proportion of each variable that is missing. If you discover that most of the data you need is missing, you need to either categorize it as missing or impute a value for the missing data. You can also go back to the source and remediate any data extraction issues.
 * Identify Outliers:   outliers can dramatically impact some descriptive statistics, like the mean. It would be best to determine the cause of outliers and consider whether you want to leave them in the data before proceeding with any ongoing analysis.
 * Summarize Statistics:  Calculate summary statistics for each variable. For numeric variables, examples of summary statistics include mean, median, and variance. For categorical data like eye colour, you could develop a table showing the frequency with which each observation occurs.
-* Check Assumptions:  Depending on the statistical method you are using, you need to understand the shape of the data. For example, if you are working with numeric data, you should choose a normal or t-distribution for drawing inferences. If you are working with categorical data, use the chi-square distribution.  
+* Check Assumptions:  Depending on the statistical method you are using, you need to understand the shape of the data. For example, if you are working with numeric data, you should choose a normal or t-distribution for drawing inferences. If you are working with categorical data, use the chi-square distribution.
+# 
 
 
 
