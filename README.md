@@ -738,6 +738,74 @@ If that is not feasible, you at least want the first column in your SELECT state
 *   When exploring a dataset, recall that outliers can have a significant impact on mean and range.
 *    Using the IQR as a dispersion indicator, in addition to the range, improves your perspective since the IQR excludes outliers.
 
+*    INFERENTIAL STATISTICS
+*    Inferential statistics is a branch of statistics that uses sample data to draw conclusions about the overall population.
+
+*  Confidence Intervals
+* confidence interval describes the possibility that a sample statistic contains the true population parameter in a range of values around the mean.
+*  When calculating a confidence interval, you end up with a lower bound value and an upper bound value.
+*   Given the confidence interval range, the lower bound is the lower limit, and the upper bound is the upper limit.
+
+*   Hypothesis Testing
+*   approaches to proving or disproving ideas is hypothesis testing. A hypothesis test consists of two statements, only one of which can be true.
+*   It uses statistical analysis of observable data to determine which of the two statements is most likely to be true.
+*   when hypothesis testing, the null and alternative hypothesis describe the effect in terms of the total population. To perform the hypothesis test itself, you need sample data to make inferences about characteristics of the overall population.
+*  A hypothesis test consists of two components: the null hypothesis and the alternative hypothesis. When designing a hypothesis test, you first develop the null hypothesis.
+*   A null hypothesis (H0) presumes that there is no effect on the test you are conducting.
+*   When hypothesis testing, your default assumption is that the null hypothesis is valid and that you have to have evidence to reject it.
+*    The alternative hypothesis (Ha) presumes that the test you are conducting has an effect.
+*   To determine the statistical significance of whether to accept or reject the null hypothesis, you need to compare a test statistic against a critical value.
+*    A test statistic is a single numeric value that describes how closely your sample data matches the distribution of data under the null hypothesis.
+
+*  Simple Linear Regression
+*  Simple linear regression is an analysis technique that explores the relationship between an independent variable and a dependent variable.
+*  You can use linear regression to identify whether the independent variable is a good predictor of the dependent variable.
+*  can perform a regression analysis in spreadsheets like Microsoft Excel and programming languages, including Python and R. When plotting the results of a regression, the independent variable is on the x-axis and the dependent variable is on the y-axis.
+
+*  From Simple to Multiple Linear Regression
+*  Multiple linear regression builds on that concept by examining the effect of numerous independent variables on a dependent variable
+*   crucial aspect of linear regression is the correlation between how far the observations are from the regression line.
+*   Correlation is a measurement of how well the regression line fits the observations. The correlation coefficient (r) ranges between –1 and 1 and indicates the strength of the correlation.
+*   The stronger the correlation, the more tightly the points wind around the line of best fit.
+*   Perfect correlation is when r has a value of either –1 or 1, implying that every data point falls directly on the regression line. Interpreting correlation strength depends on the industry.
+*  When evaluating the correlation between variables, one thing to keep in mind is that it does not imply causation.
+
+* ANALYSIS TECHNIQUES
+* Determine Type of Analysis
+* When embarking on a new analytics challenge, you need to understand the business objectives and desired outcomes.
+*  This understanding informs the type of analysis you will conduct.
+*   The first step to understanding the objectives is to ensure that you have clarity on the business questions at hand.
+*   need to review the business questions and identify any points that require additional clarification. This clarity will help you identify the data you need as well as the data sources.
+*  While reviewing requirements, develop a list of clarifying questions. This list can help define the scope of your analysis.
+*   Your clarification list can also identify any gaps between what is achievable given data source and time constraints.
+*   Once you have your list of questions, review it with the business sponsor to ensure you agree on expectations.
+*   Recognize that reviewing and refining business questions is an iterative process.
+*   While you need to have initial clarity, you will likely have to return to your business leader for additional clarification as you conduct your analysis.
+*   Use the document to track new issues that impact the project timeline and any adjustments to project scope or ultimate deliverables.
+*   A running log identifying any scope changes is a valuable aid that can help you make sure you deliver your analysis on time.
+*   It can also help you after your work is complete as you reflect on what went well and what would make future endeavors more successful.
+
+*  Types of Analysis
+*  One of the types of analysis you may be asked to perform is trend analysis.
+*  Trend analysis seeks to identify patterns by comparing data over time.
+*  In addition to trend analysis, you may also conduct performance analysis.
+*  Performance analysis examines defined goals and measures performance against them and can inform the development of future projections.
+*  Performance analysis can identify whether properties are achieving those goals.
+*  Combining performance analysis with trend analysis can help develop projections for the future.
+
+* Exploratory Data Analysis
+*   An exploratory data analysis (EDA) uses descriptive statistics to summarize the main characteristics of a dataset, identify outliers, and give you context for further analysis.
+
+*  approaches to conducting an EDA:
+*  Check Data Structure:  Ensure that data is in the correct format for analysis. Most analysis tools expect data to be in a tabular format, so you need to confirm that your data has defined rows and columns.\
+*  Check Data Representation:  Become familiar with the data. In this step, you validate data types and ensure that variables contain the data you expect.
+*  Check if Data Is Missing:  Check to see if any data is missing from the dataset and determine what to do next. While checking for null values, calculate the proportion of each variable that is missing. If you discover that most of the data you need is missing, you need to either categorize it as missing or impute a value for the missing data. You can also go back to the source and remediate any data extraction issues.
+* Identify Outliers:   outliers can dramatically impact some descriptive statistics, like the mean. It would be best to determine the cause of outliers and consider whether you want to leave them in the data before proceeding with any ongoing analysis.
+* Summarize Statistics:  Calculate summary statistics for each variable. For numeric variables, examples of summary statistics include mean, median, and variance. For categorical data like eye colour, you could develop a table showing the frequency with which each observation occurs.
+* Check Assumptions:  Depending on the statistical method you are using, you need to understand the shape of the data. For example, if you are working with numeric data, you should choose a normal or t-distribution for drawing inferences. If you are working with categorical data, use the chi-square distribution.  
+
+
+
 
 
 
