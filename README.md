@@ -714,7 +714,30 @@ If that is not feasible, you at least want the first column in your SELECT state
 * Standard Deviation
 * Standard deviation is a statistic that measures dispersion in terms of how far values of a variable are from its mean.
 * standard deviation is the average deviation between individual values and the mean. Mathematically,  signifies population standard deviation, which you calculate by taking the square root of the variance
-* calculating variance is an important step on the way to determining standard deviation. Similar to variance, the standard deviation is a measure of volatility, with a low value implying stability. Standard deviation is a popular statistic because of the empirical rule. Also known as the three-sigma rule, the empirical rule states that almost every observation falls within three standard deviations of the mean in a normal distribution.
+* calculating variance is an important step on the way to determining standard deviation. Similar to variance, the standard deviation is a measure of volatility, with a low value implying stability.
+*  Standard deviation is a popular statistic because of the empirical rule.
+*  Also known as the three-sigma rule, the empirical rule states that almost every observation falls within three standard deviations of the mean in a normal distribution.
+
+*  Each Sample is Unique
+*  each sample from a population is unique.
+*  Special Normal Distributions - The Central Limit Theorem and empirical rule combine to make the normal distribution the most important distribution in statistics.
+*  Standard Normal Distribution
+*  The standard normal distribution, or Z-distribution, is a special normal distribution with a mean of 0 and a standard deviation of 1.
+* can standardize any normal distribution by converting its values into Z-scores.
+* Converting to the standard normal lets you compare normal distributions with different means and standard deviations.
+* Student's T-Distribution
+* The Student's t-distribution, commonly known as the t-distribution, is similar to the standard normal distribution in that it has a mean of 0 with a bell-like shape.
+* One way the t-distribution differs from the standard normal distribution is how thick the tails are since you can use the t-distribution for sample sizes of less than 30.
+
+* Measures of Position
+* Understanding a specific value for a variable relative to the other values for that variable gives you an indication of the organization of your data.
+*  Statisticians commonly use quartiles to describe a specific observation's position.
+*  The process of obtaining quartiles is similar to that of determining the median. You first sort a numeric dataset from smallest to largest and divide it positionally into four equal groups. Each grouping is known as a quartile.
+*   The first quartile is the group that starts with the minimum value, whereas the fourth quartile is the group that ends with the maximum value.
+*   The interquartile range (IQR) is the combination of the second and third quartiles and contains 50 percent of the values in the data.
+*   When exploring a dataset, recall that outliers can have a significant impact on mean and range.
+*    Using the IQR as a dispersion indicator, in addition to the range, improves your perspective since the IQR excludes outliers.
+
 
 
 
