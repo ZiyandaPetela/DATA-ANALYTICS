@@ -954,7 +954,32 @@ If that is not feasible, you at least want the first column in your SELECT state
 
 *  BusinessObjects
 * BusinessObjects is an enterprise reporting tool from SAP that is designed to provide a comprehensive reporting and analytics environment for organizations.
-*  One of the strengths of this suite is the ability to integrate BusinessObjects reports with other applications, allowing organizations to integrate analytics into other portions of their workflow. 
+*  One of the strengths of this suite is the ability to integrate BusinessObjects reports with other applications, allowing organizations to integrate analytics into other portions of their workflow.
+
+# SUMMARY QUESTIONS 
+*  Describe the role of the spreadsheet in the modern organization.
+*  Spreadsheets are productivity software packages that allow users to create documents that organize any type of data into rows and columns.
+*  They are extremely flexible analytics tools that are available on most modern office computer systems and are very easy to use. The most commonly used spreadsheet software package is Microsoft Excel.
+*  Understand how analytics teams use programming languages.
+*  Data professionals with coding skills often turn to programming languages to create their software analysis tools.
+*  This approach frees them of the constraints of other packages and allows them to create software that directly meets their needs.
+*  The R programming language is designed specifically for analytics use and is quite easy to learn
+*   Python is a general-purpose programming language that is more difficult to learn but can create virtually any software package
+*   Know how analysts and developers interact with databases
+*    Relational databases are the primary data stores used in the modern organization
+*   Analysts and developers may interact directly with databases using the Structured Query Language (SQL). SQL has two subcomponents
+*    The Data Definition Language (DDL) defines the structure of the database and contains commands to create, alter, and destroy databases and tables
+*  The Data Manipulation Language (DML) interacts with the data stored in a database and contains commands to add, retrieve, modify, and delete data.
+*  Describe the role of statistical analysis software.
+*   Statistical analysis software provides access to advanced statistical environments that are accessible through a graphical user interface and/or a built-in scripting language.
+*  These software packages are commonly used by professional statisticians in their work.
+*  The statistical analysis software packages covered on the Data+ exam include IBM SPSS, SAS, Stata, and Minitab.
+*  Describe the role of machine learning software. Machine learning packages offer a set of graphical tools designed to help analysts build machine learning models without requiring them to actually write the code to do so.
+*   These machine-learning tools aim to make machine-learning techniques more accessible.
+*   Analysts may still tune the parameters of their models but do not necessarily need to write scripts to do so. The machine learning software packages covered on the Data+ exam include IBM SPSS Modeler and RapidMiner.
+*   Describe the role of data analytics suites. Data analytics suites provide powerful capabilities that cross all phases of an analytics process.
+*    These tools allow analysts to ingest and clean data, perform exploratory statistical analysis, visualize their data, produce models, make predictions, and communicate and report their results.
+*    The data analytics suites covered on the Data+ exam include IBM Cognos, Microsoft Power BI, MicroStrategy, Domo, Datorama, AWS QuikSight, Tableau, Qlik, and BusinessObjects
 
 
 
