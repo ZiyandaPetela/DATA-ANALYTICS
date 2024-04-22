@@ -982,6 +982,156 @@ If that is not feasible, you at least want the first column in your SELECT state
 *    The data analytics suites covered on the Data+ exam include IBM Cognos, Microsoft Power BI, MicroStrategy, Domo, Datorama, AWS QuikSight, Tableau, Qlik, and BusinessObjects
 
 
+# CHAPTER SEVEN: DATA VISUALIZATION WITH REPORTS AND DASHBOARDS
+* Understanding the Business Requirements
+* Reports and dashboards both summarize data for end users, but they distribute those summaries in different ways
+* A report is a static electronic or physical document that reflects information at a given point in time.
+*  a dashboard is an interactive visualization that encourages people to explore data dynamically.
+*  Both reports and dashboards are ideal tools for visualizing data content.
+*  The most important thing to define when developing a report or dashboard is answering the question, “Who is the audience?”
+*   You shouldn't begin creating a report or dashboard until you clearly unyearsderstand who your audience is and how they will use the product.
+*   Once you clearly understand the audience and their needs, you can turn your attention to identifying the data sources that will satisfy the requirements of your audience. For instance, you may need to combine data across multiple subject areas.
+*    Sourcing this data can be a challenge, as when a corporation grows inorganically through acquisition, it can end up with multiple redundant systems to accomplish a single business objective. As an analyst, your job is to ensure that you have access to the appropriate data sources.
+*    Report parameters let you define data range limits for the data elements in your report.
+*    Once you identify who needs what data and when they need it, you can focus on how people access the report.
+*  If people access the report digitally, one way to solve the distribution challenge is with a pull approach.
+*   With a pull approach, you publish a report to a known location, like a web page, and let people know the frequency and timing of when the report updates. With this approach, people can go to the website when they want to use the report.
+*   Alternatively, you could implement a push approach. With a push approach, the report is automatically sent to the appropriate people as it becomes available.
+*    When designing a push approach, you need to think through distribution considerations.
+*    For example, a report may prove to be too large to distribute via email.
+*  In that case, you could use a blended distribution approach. With a blended approach, you store the report centrally and let people know when the report has been updated and is ready for use.
+*  With the blended approach, you inform people that the report is available while maintaining central control of the report itself.
+*  If you go with a push or blended approach for informing people about the readiness of a given report, be sure to think through the maintenance of the distribution list of people to notify.
+*   With all organizations, people rotate in and out of roles. As people transition out of a position, you want to ensure that they no longer receive notifications about reports that are no longer relevant to their job role. On the other hand, as a new person joins the organization, you need to get that person the reports they require to be effective in their role.
+
+*   Understanding Report Design Elements
+* When creating a report or a dashboard, you can use existing design principles as guideposts.
+*  These design principles, known as the “five Cs” of creating visualizations, will help ensure that your reports and dashboards communicate clearly and efficiently.
+*  When thinking visually, the five Cs are control, correctness, clarity, consistency, and concentration.
+* Control has to do with how you focus the attention of your audience.
+* When someone encounters a dashboard for the first time, one of your goals is to deliver the pertinent information quickly
+*  For instance, if there is a place where people can adjust parameters and have the dashboard respond, use visual highlights to focus attention on this capability.
+*  Correctness makes sure that your information is accurate and that there are no spelling mistakes. Pay close attention to correctness when using corporate names and logos.
+*  Clarity refers to selecting the right visualization tool for communicating your message, making sure the visualization is easy to interpret and visually crisp, and using fonts and sizes that are easy to read.
+*  Consistency refers to using the same design and documentation elements throughout your report or dashboard to give your visualization a cohesive and complete feel.
+*   Using the same font, page layout, and web page design are all techniques for ensuring consistency.
+*   Concentration refers to using visuals to focus your audience's attention on the most relevant information without overwhelming them with details.
+*   Concentration, along with clarity and control, helps you focus your audience by reducing clutter and removing unnecessary details.
+*    Use a layout that increases concentration and removes distracting visual elements from charts.
+
+*  Report Cover Page
+*  When developing a printed report, keep in mind that the first thing people see is the cover page.
+*   Since the cover page is the first thing a person sees, it is vital that it sets expectations about the observations and insights the reader will find within.
+*   Effective cover pages have a concise title that describes the contents of the report.
+*   Ideally, a cover page will also communicate a significant insight from the report itself.
+*   Accompanying the title page should be clear instructions on how to use the report.
+
+*   Executive Summary
+*   The executive summary provides an overview of the report's contents.
+*    When crafting an executive summary, you should begin with the end in mind, summarizing crucial observations and insights.
+*  With time as an executive's most precious resource, the summary needs to convey the big ideas, while the body of the report details the analysis that led to those ideas.
+
+*  Design Elements
+*  When developing a report or dashboard, you need to incorporate design elements into your thinking.
+*   Color schemes, page layout, font size and style, charts, and corporate standards are among the many design elements you should consider.
+*    These considerations apply if you are enhancing an existing report or creating a new dashboard.
+
+*  Color Schemes
+*   A color scheme is a limited selection of colors you use when creating a report or a dashboard.
+*   The first decision to make is whether you need to use a monochromatic color palette or have the flexibility to use more than one color.
+*    A monochromatic palette limits you to working with shades of a single color,
+*    If you have the luxury of working with more than one color, selecting a complementary color palette is a sound choice.
+*    A complementary palette starts with two contrasting colors. Examples of complementary colors are red and green, orange and blue, and yellow and purple.\
+*    Whether you are working in monochrome or multiple colors, ensure that the font color contrasts with the background color to ensure readability.
+
+*    Layouts
+*    The layout of a report or dashboard determines the arrangement of its component parts.
+*    It is crucial to consider approachability when thinking about the design. When developing the layout for a report, begin with a summary before diving into the supporting details. For a long, multipage report, use a table of contents so that the reader can efficiently navigate to a topic of interest, as well as headings for sections and subsections.
+*    Use brief paragraphs and bullet points to focus the reader's attention.
+*  Ensure parallel construction when developing bullet points. Parallel construction is when all bullet points use the same form and have the same style and approximate length.
+
+* Fonts
+* When choosing a font style, pick one that is easy for people to read by avoiding ornate fonts.
+* After excluding ornate options, you need to decide between a serif or sans serif font style.
+* In typography, a serif is a finishing detail for each letter in a typeface. A serif font style includes serifs (the curls), whereas a sans serif font style does not
+
+* Graphics
+* Using graphics to present summary information is a practical choice, whether creating a report or developing a dashboard.
+*  As the saying goes, a picture is worth a thousand words, and visually conveying information with charts helps focus your audience's attention.
+*  Think through the key chart elements when designing charts, including the chart's title, labels, and legends.
+*  When using a chart, be sure to use labels appropriately. In a chart with an x-axis and a y-axis, a label describes what each axis represents.
+* When a chart shows multiple categories, use a legend to help the reader distinguish between categories.
+
+*  Corporate Reporting Standards
+*  When developing any type of visualization, be mindful of any existing corporate reporting standards. 
+For instance, your organization may have a style guide for reporting.
+ A style guide is a set of standards that drives consistency in communication. As a means of enforcing structure and consistency, style guides define the use of a variety of branding elements, including page layout, font selection, corporate color codes, logos, and trademarks\
+
+* Documentation Elements
+* People must trust the information in your visualizations.
+*  To help establish trust, you can incorporate documentation elements, including version numbers, reference data sources, and reference dates.
+*   Reference dates include the initial creation date, report run date, and data refresh date.
+
+* Version Number
+*  A version number is a numeric value that refers to a specific version of a report.
+*  Version numbers help you keep track of changes to content and layout over time.
+*   Reference data sources identify where data in the report originates.
+*   For example, if you are using a data mart to create a visualization for colleagues in the finance division, specify the name of the data mart.
+
+*  Reference Data Sources
+* Reference dates help people understand what to expect in terms of data recency.
+*  For example, if a report has a daily refresh cycle, the report run date helps people realize when the last data refresh date was.
+*   If they see that the refresh date is from a week ago, they know the report is missing a week's worth of data.
+
+*  Frequently Asked Questions
+*  When developing a report or a dashboard, it is good to maintain a set of frequently asked questions (FAQs).
+*   A FAQ provides answers to people's most common questions.
+*   If the dashboard is available online, the FAQ can contain links to a glossary of unique terms, cross-references to other dashboards or reports, and contact information if there are additional questions.
+
+* Appendix
+*  When developing a report, use an appendix to include supporting details that are inappropriate to include in the main body.
+*  For example, suppose you use statistical analysis to derive the central insight for a report.
+*  Recall that one of the goals of creating a report is to convey insights.
+*  Instead of detailing each calculation in the main report body, move them to an appendix.
+*   That way, the general reader will not feel overwhelmed by the details, while the informed reader can explore the calculations in detail.
+
+*  Understanding Dashboard Development Methods
+* dashboard considerations that you should keep in mind:
+*  Consumer Types
+*  As with developing a report, it is crucial to identify who will be interacting with the dashboard you create.
+*   dashboard needs to consolidate critical performance metrics with the ability to get additional detail on an as-needed basis to assist people with C-level responsibilities in making strategic decisions.
+*   Ensure you spend sufficient time identifying the key performance indicators (KPIs) crucial to senior leaders.
+*   A KPI is a metric that leadership agrees is crucial to achieving the organization's business objectives. As you identify what leaders want to see, you can locate where to get the relevant data.
+*   A large organization typically has external stakeholders who serve on its board of directors.
+*    While the board's needs closely align with the needs of C-level executives, you need to incorporate any of the board's unique requirements in your dashboard so that board members can fulfill their oversight and corporate management duties effectively.
+
+* Data Source Considerations
+* With clarity on what your dashboard needs to contain, you can proceed with identifying data sources. The most vital determination you make about data sources hinges on whether or not the dashboard needs to incorporate live data. 
+* static data is data that refreshes at some regular interval. A typical design pattern is for operational databases to update a data warehouse every night.
+* Continuous data, also known as live data, typically comes directly from an operational database that people use to perform their daily duties.
+*  The operational database provides a live data feed to the dashboard.   
+
+* Data Type Considerations
+* One thing that differentiates dashboards and reports is the fact that dashboards use software as the delivery mechanism.
+*  As such, you have to have a deeper understanding of your source data than when you are creating a report.
+*  Whether you use packaged software like Tableau or Qlik or write your own visualization using a programming language like Python or R, you need to ensure you can handle the data type of each attribute.
+*  When creating a dashboard, you use qualitative data to create dimensions.
+*  A dimension is an attribute that you use to divide your data into categories or segments.
+*  To make sure you are representing the source data categories entirely, map the field definitions from the source data to your visualization tool.
+*   For example, a geographic dimension lets you look at your data by geographic region.
+*   A date dimension enables you to explore data at various levels of time-related granularity. For example, suppose you are creating a sales dashboard and want to allow the flexibility to look at sales by day of the week, week, month, quarter, year, fiscal quarter, and fiscal year. Each date increment is a value within the time dimension.
+*   A measure is a numeric, quantitative value that a dashboard user is curious about. 
+
+* Development Process
+* After you identify the data sources that will power your dashboard, you must turn your attention to developing the dashboard itself. Use wireframes and mock-ups to help build and refine the dashboard's design.
+* A wireframe is a blueprint for an application that defines the basic design and functions of a dashboard.
+* Think of a wireframe as a blueprint for a building. Architects develop blueprints to describe the internal structure of a building.
+* Similarly, a wireframe defines the basic structure, functionality, and content of a dashboard. Use wireframes to define the presentation layout and navigation flow to guide how people will interact with the dashboard.
+* A mock-up extends a wireframe by providing details about the visual elements of the dashboard, including fonts, colors, logos, graphics, and page styles.
+* While a wireframe is conceptually similar to a blueprint, a mock-up is closer to an architectural rendering.
+* The goal of a mock-up is to give people a perspective as to the dashboard's final user interface. Use mock-ups to ensure your dashboard is consistent with your organizational communication standards.
+
+* Delivery Considerations
 
 
 
