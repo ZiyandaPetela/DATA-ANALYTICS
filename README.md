@@ -1065,7 +1065,14 @@ If that is not feasible, you at least want the first column in your SELECT state
 *  Corporate Reporting Standards
 *  When developing any type of visualization, be mindful of any existing corporate reporting standards. 
 For instance, your organization may have a style guide for reporting.
- A style guide is a set of standards that drives consistency in communication. As a means of enforcing structure and consistency, style guides define the use of a variety of branding elements, including page layout, font selection, corporate color codes, logos, and trademarks\
+ A style guide is a set of standards that drives consistency in communication. As a means of enforcing structure and consistency, style guides define the use of a variety of branding elements, including page layout, font selection, corporate color codes, logos, and trademarks
+
+* Recurring Reports
+* ecurring reports provide summary information on a regularly scheduled basis.
+*  Typically, recurring reports get delivered to their audience immediately after creation.
+*  Operational reports typically show the KPIs for an organization
+* Compliance reports detail how your organization meets its compliance obligations.
+* Depending on where your organization operates in the world, there are country-specific compliance requirements, including financial, health, information technology, and safety.  
 
 * Documentation Elements
 * People must trust the information in your visualizations.
@@ -1212,6 +1219,26 @@ The goal of an infographic is to convey an insight in a way that minimizes the t
 *  Ad hoc reports, or one-time reports, use existing data to meet a unique need at a specific point in time
 
 *  Self-Service (On-Demand)
+*  Self-service reports, or on-demand reports, allow individuals to answer questions that are unique to them at a time of their choosing.
+*  Instead of having data pushed to them, an attribute of self-service reporting is that individuals can pull a report at the time of their choosing.
+
+*  Recurring Reports
+*  recurring reports provide summary information on a regularly scheduled basis.
+*   Typically, recurring reports get delivered to their audience immediately after creation.
+*    For example, a company's sales leader will want monthly, quarterly, and annual sales numbers available regularly.
+* Operational reports typically show the KPIs for an organization.
+
+*  Tactical and Research
+*    It is vital to identify whether the report you create is for tactical or strategic purposes.
+*  Tactical reports provide information to inform an organization's short-term decisions.
+*  Tactical information helps organizations accomplish initiatives like constructing a building, opening a manufacturing plant, or shipping products from one location to another.
+*  Data for tactical reports come from various sources, including operational and analytical systems, and enable operational decisions.
+*  A research report helps an organization make strategic decisions.
+*  To achieve strategic objectives, an organization executes multiple tactical initiatives.
+*   Where a tactical report informs a decision with a finite scope and duration, research reports inform the development of an overarching strategy.
+*    The implications of strategic decisions are broad, including whether to acquire a competitor, how many component suppliers an organization needs, and whether to diversify and enter an entirely new market.
+*    Since the decision implications are broad, strategic reports take more time to create than tactical reports.
+*  Strategic reports often combine internal data about an organization's operational performance and risks with data about external forces.  
 
 
 
