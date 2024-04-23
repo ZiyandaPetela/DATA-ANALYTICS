@@ -1132,8 +1132,90 @@ For instance, your organization may have a style guide for reporting.
 * The goal of a mock-up is to give people a perspective as to the dashboard's final user interface. Use mock-ups to ensure your dashboard is consistent with your organizational communication standards.
 
 * Delivery Considerations
+*  As you document their requirements and develop mock-ups, you need to determine whether people can subscribe to changes
+*  If subscription capability is a requirement, you need to have a system where people can opt-in to receive a notification when the underlying data changes.
+* In addition to offering a subscription service, another delivery consideration is scheduled delivery
+*  The level of interactivity needs to accommodate requirements from the data story plan.
+*  As the dashboard conveys aggregated data, you need to understand the dimensions where dashboard users will want to explore additional details.
+*  That will help you design a dashboard that lets people drill down into deeper levels of detail.
+
+* Operational Considerations
+*  Once you have final approval, you proceed with developing the dashboard.
+*   Similar to the design stage, make sure you include frequent opportunities to gather feedback.
+*   Once dashboard development is complete, test it thoroughly to verify its functionality.
+*   As you build a dashboard, make sure you clearly define the access permissions.
+*    Access permissions define the data that a given person can access. When defining access permissions, do so in terms of roles instead of people
+*  As you confirm that the dashboard will serve its intended purpose, you are ready to deploy it to production.
+*  Once the dashboard is in active use, your work is not over.
+*  You need to ensure the dashboard continues to answer leadership's questions while performing well.
+*   As the person responsible for the dashboard itself, you need to pursue ongoing dashboard optimizations.
+*   A given optimization may improve the performance of a dashboard component or may include a new data source to enable answering new sets of questions.  
+
+# Exploring Visualization Types
+* Charts
+* Charts are one of the foundational methods for visualizing both qualitative and quantitative data.
+  
+* Line Chart - A line chart shows the relationship of two variables along an x- and a y-axis.
+* Line charts effectively visualize the relationship between time on the x-axis and a variable on the y-axis.
+
+* Pie Chart
+* A pie chart gets its name from its circular shape where the circle represents 100 percent, and each slice of the pie is a proportion of the whole.
+*  A pie chart presents categorical, or discrete, data as individual slices of the pie.
+*  When using a pie chart, ensure that you label each pie slice appropriately
+
+* Bar Chart
+*  similar to a pie chart, a bar chart presents categorical data. Where a pie chart is circular, a bar chart uses rectangular bars to depict each proportion.
+*   Bar charts tend to be more interpretable for people than pie charts
+
+*   Stacked Chart -  stacked chart or stacked bar chart, starts with a bar chart and extends it by incorporating proportional segments on each bar for categorical data.
+*  A scatter chart, or scatter plot, uses a dot for each observation in a data set to show the relationship between two numeric variables.
+*   A bubble chart is a scatterplot where the size of each dot is dependent on a third numeric variable
+
+*   Histogram
+* A histogram is a chart that shows a frequency distribution for numeric data.
+* When performing an exploratory data analysis, create histograms for numeric data.
+* These histograms illustrate the shape of the distribution and can inform the next stage of analysis.
+*  Histograms are also effective for communicating a distribution's shape to stakeholders.
+
+*  Maps
+* People frequently use maps to convey the location of a country, town, or individual address.
+*  Maps are effective methods of orienting a person to a dataset.
+*  There are numerous types of maps available to visualize data, including geographic, heat, and tree maps.
+
+*  Waterfall
+*  A waterfall chart displays the cumulative effect of numeric values over time.
+*  Waterfall charts facilitate an understanding of how a series of events impact an initial value.
+*  Use a waterfall chart any time you want to see how events affect a baseline value.
+
+* Infographic
+*  An infographic, which gets its name from the words “information” and “graphic,” is a visualization that presents information clearly and concisely.
+ Infographics minimize text in favor of visual elements to represent a topic in a format that is easy to understand.
+The goal of an infographic is to convey an insight in a way that minimizes the time to comprehension.
+
+* Word Cloud
+* A word cloud is a visualization that uses shape, font size, and color to signify the relative importance of words.
+*  Word clouds are effective at visualizing free-form text responses.
+*   When creating a word cloud, you eliminate common words and conjunctions as they occur frequently and don't add value in terms of meaning.
+*    The heart shape of Figure 37 conveys positivity, and the words system, learn, data, inspired, course, and think stand out.
+
+# Comparing Report  Types
+* When embarking on any reporting project, recall that you first have to identify the audience and their needs.
+* After clarifying who will consume your report and what information they need to see, it is crucial to determine when they need it.
+
+* Static and Dynamic Report Types
+* Static reports pull data from various data sources to reflect data at a specific point in time.
+*  To feed your trend report, you need the daily price for each security over five years. Data marts and data warehouses are typical sources for this type of data.
+
+*  Dynamic reports give people real-time access to information.
+*   Using your five-year trend report to inform their analysis, a financial analyst in your company may want to execute a trade.
+*    Data marts and data warehouses are insufficient for providing real-time information.
+*  Ad hoc reports, or one-time reports, use existing data to meet a unique need at a specific point in time
+
+*  Self-Service (On-Demand)
 
 
+
+ 
 
 
 
