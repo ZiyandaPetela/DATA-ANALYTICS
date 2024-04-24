@@ -1240,8 +1240,53 @@ The goal of an infographic is to convey an insight in a way that minimizes the t
 *    Since the decision implications are broad, strategic reports take more time to create than tactical reports.
 *  Strategic reports often combine internal data about an organization's operational performance and risks with data about external forces.  
 
+# CHAPTER 8 : Data Governance Concepts
+* Data governance is the set of policies, procedures, and controls that an organization develops to safeguard its information while making it useful for transactional and analytic purposes.
+* Governments have a method for creating, interpreting, and enforcing laws.
+* Part of this process ensures that these laws are known to the citizenry.
+* For organizations, data governance is an umbrella term covering the creation, interpretation, and enforcement of data use.
+* Additional governance policies identify how to secure data, comply with regulations, protect data privacy, and deal with data over time.
+*  Just as countries enforce laws, organizations implement procedural and technical controls to comply with data governance standards.
 
+* Data Governance Roles
+* Data stewardship is the act of developing the policies and procedures for looking after an organization's data quality, security, privacy, and regulatory compliance.
+* The most vital role for effective data stewardship is that of the organizational data steward.
+*  An organizational data steward, or data steward, is the person responsible for data stewardship.
+*  The data steward is responsible for leading an organization's data governance activities.
+* A data owner is a senior business leader with overall responsibility for a specific data domain.
+*  A data domain, or data subject area, contains data about a particular operational division within an organization. Finance, human resources, and physical plant are all examples of operational divisions.
+*  Data owners work with the data steward to establish policies and procedures for their data domain.
+*  A data custodian is a role given to someone who implements technical controls that execute data governance policies.
+*   Data custodians are frequently information technology employees who configure applications, dashboards, and databases.
+*   Data access requirements determine which people need access to what data. Access requirements differ by data subject area and can be as granular as a single field.
 
+*  Access Permissions
+*  Tole-based access means that instead of giving access to individual people, you grant access to the role they occupy.
+*   When you define roles and then assign people to those roles, it simplifies how you manage permissions.
+
+* Group Permissions
+* An organization chart documents the reporting structure within an organization.
+* When developing a role-based access strategy, it is common to implement user group-based permissions
+
+* Data Use Agreements
+* A data use agreement (DUA) is a contractual document for transferring private data between organizations.
+*  You should establish a DUA before sharing data with an outside party. It is essential to understand the classification for each piece of data when crafting a DUA.
+
+*  Security Requirements
+* With data access requirements in place, you need to determine the technical controls for protecting data.
+* In cryptography, encryption is the process of encoding data with a key so that only authorized parties can read it.
+*  Data encryption is one of the fundamental components of data protection, as the data is unusable without the key to decrypt it.
+*  An encryption key is a series of letters, numbers, and symbols used during the encoding process to make data unreadable.
+*   Once the data is encrypted, you can only access it by decrypting it with a valid key. If you lose the encryption key, any data encrypted with that key becomes useless.
+*   To keep data secure, you must encrypt data at rest as well as data in transit. Data at rest is data that exists in permanent storage.
+*   Data in transit is data that is actively moving between one location and another.
+*    During data transmission, you must encrypt the connection between the locations to ensure the data's security.
+*    When considering data in transit, you need to account for people interacting with computers and computers interacting with other computers.
+
+*    Storage Environment Requirements
+*  Create a password for encrypting the local storage.
+*  Determine the operating system.
+*  Use the encryption tool appropriate for the chosen operating system.  
  
 
 
