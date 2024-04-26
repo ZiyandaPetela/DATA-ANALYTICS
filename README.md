@@ -1,5 +1,5 @@
 # DATA-ANALYTICS
-# INTRODUCTION 
+# MODULE 1 : CHAPTER 1- INTRODUCTION 
 Confident computer user?
 A confident computer user is one who knows more than just the required key presses to operate the software they are using.
 * The two most important qualities of a confident computer user are:
@@ -90,7 +90,7 @@ Internet of Things (IoT) specialists
 * Software helps analysts work through each one of the phases of the analytics process.
 *  These tools automate much of the heavy lifting of data analysis, improving the analyst's ability to acquire, clean, manipulate, visualize, and analyze data.
 *  They also provide invaluable assistance in reporting and communicating results.
-# Understanding Data
+# MODULE 1 : CHAPTER 2- Understanding Data
 # Exploring Data Types
 * To understand data types, it is best first to understand data elements. A data element is an attribute about a person, place, or thing containing data within a range of values.
 * Data elements also describe characteristics of activities, including orders, transactions, and events.
@@ -158,7 +158,7 @@ Internet of Things (IoT) specialists
 * HyperText Markup Language (HTML) is a markup language for documents designed to be displayed in a web browser.
 *  HTML pages serve as the foundation for how people interact with the World Wide Web. Similar to XML, HTML is a tag-based language.
 
-# CHAPTER THREE - Databases and Data Acquisition
+# MODULE 2: CHAPTER THREE - Databases and Data Acquisition
 * two categories categories of a database 1.Relational 2.Nonrelational
 * Relational databases excel at storing and processing structured data.
 * The need to interact with unstructured data is one of the reasons behind the rise of nonrelational databases.
@@ -390,7 +390,7 @@ If that is not feasible, you at least want the first column in your SELECT state
 *   Execution plans are extremely helpful in troubleshooting query performance issues. They provide additional information about how a query is spending its time. For example, an execution plan can tell you if a slow-running query uses a full table scan instead of an index scan. 
 
 
-# CHAPTER FOUR - DATA QUALITY
+# MODULE 2 :CHAPTER FOUR - DATA QUALITY
 * Businesses need high-quality data to create the kinds of analysis that organizations rely on for decision-making.
 * While the data we use in these analyses is not ever perfect, understanding the limitations of each dataset you use will help you identify any data transformation work that you must complete before proceeding with analysis.
 
@@ -502,11 +502,11 @@ If that is not feasible, you at least want the first column in your SELECT state
 *    When merging multiple data sources, you may end up with a dataset with many nulls in a given column.
 *    If you are collecting sensor data, it is possible to have missing values due to collection or transmission issues.
 * approaches an analyst can use for imputing values:
-*      Remove Missing Data:  With this approach, you can remove rows with missing values without impacting the quality of your overall analysis.
-*     Replace with Zero:  With this approach, you replace missing values with a zero. Whether or not it is appropriate to replace missing data with a zero is contextual.
-*     Replace with Overall Average:  Instead of using a zero, you can compute the average Weight value for all rows that have data and then replace the missing Weight values with that calculated average.
-*     Replace with Most Frequent (Mode):  Alternatively, you can take the most frequently occurring value, called the mode, and use that as the constant
-*     Closest Value Average:  With this approach, you use the values from the rows before and after the missing values. 
+*  Remove Missing Data:  With this approach, you can remove rows with missing values without impacting the quality of your overall analysis.
+* Replace with Zero:  With this approach, you replace missing values with a zero. Whether or not it is appropriate to replace missing data with a zero is contextual.
+*  Replace with Overall Average:  Instead of using a zero, you can compute the average Weight value for all rows that have data and then replace the missing Weight values with that calculated average.
+* Replace with Most Frequent (Mode):  Alternatively, you can take the most frequently occurring value, called the mode, and use that as the constant
+*  Closest Value Average:  With this approach, you use the values from the rows before and after the missing values. 
 
 * Reduction
 * When dealing with big data, it is frequently unfeasible and inefficient to manipulate the entire dataset during analysis.
@@ -595,7 +595,7 @@ If that is not feasible, you at least want the first column in your SELECT state
 *  cross-validate the model using the testing subset to determine how accurate the prediction is. Cross-validation is also helpful in identifying data sampling issues.
 *  
 
-# CHAPTER FIVE : Data Analysis and Statistics
+# MODULE 2: CHAPTER FIVE - Data Analysis and Statistics
 
 * Fundamentals of Statistics
 * core statistical concepts
@@ -803,7 +803,7 @@ If that is not feasible, you at least want the first column in your SELECT state
 * Summarize Statistics:  Calculate summary statistics for each variable. For numeric variables, examples of summary statistics include mean, median, and variance. For categorical data like eye colour, you could develop a table showing the frequency with which each observation occurs.
 * Check Assumptions:  Depending on the statistical method you are using, you need to understand the shape of the data. For example, if you are working with numeric data, you should choose a normal or t-distribution for drawing inferences. If you are working with categorical data, use the chi-square distribution.
 
-# DATA ANALYTICS TOOLS- CHAPTER 6
+# MODULE 3 :DATA ANALYTICS TOOLS- CHAPTER 6
 * When you are selecting a tool you shouls consider.
 * First, you need the right tool for the job. an analytics professional would not use a spreadsheet to create a machine-learning model.
 * Second, you need to choose from the tools available to you. Many analytics tools come with hefty price tags and organizations only license a small subset of them to control costs. Standardizing on a subset of tools also helps improve the ability of teams to work together.
@@ -982,7 +982,7 @@ If that is not feasible, you at least want the first column in your SELECT state
 *    The data analytics suites covered on the Data+ exam include IBM Cognos, Microsoft Power BI, MicroStrategy, Domo, Datorama, AWS QuikSight, Tableau, Qlik, and BusinessObjects
 
 
-# CHAPTER SEVEN: DATA VISUALIZATION WITH REPORTS AND DASHBOARDS
+# MODULE 3 : CHAPTER SEVEN - DATA VISUALIZATION WITH REPORTS AND DASHBOARDS
 * Understanding the Business Requirements
 * Reports and dashboards both summarize data for end users, but they distribute those summaries in different ways
 * A report is a static electronic or physical document that reflects information at a given point in time.
@@ -1240,7 +1240,7 @@ The goal of an infographic is to convey an insight in a way that minimizes the t
 *    Since the decision implications are broad, strategic reports take more time to create than tactical reports.
 *  Strategic reports often combine internal data about an organization's operational performance and risks with data about external forces.  
 
-# CHAPTER 8 : Data Governance Concepts
+# Module 4: CHAPTER 8 -  Data Governance Concepts
 * Data governance is the set of policies, procedures, and controls that an organization develops to safeguard its information while making it useful for transactional and analytic purposes.
 * Governments have a method for creating, interpreting, and enforcing laws.
 * Part of this process ensures that these laws are known to the citizenry.
@@ -1286,7 +1286,49 @@ The goal of an infographic is to convey an insight in a way that minimizes the t
 *    Storage Environment Requirements
 *  Create a password for encrypting the local storage.
 *  Determine the operating system.
-*  Use the encryption tool appropriate for the chosen operating system.  
+*  Use the encryption tool appropriate for the chosen operating system.
+
+*  Use Requirements
+*  Use requirements specify how to collect, process, use, store, retain, and remove data.
+*   While understanding audience requirements is vital for creating impactful visualizations, understanding data use requirements is crucial to effective data governance.
+*    You need to consider requirements along each stage of the data life cycle, from the moment you create data until the point at which it gets removed or archived.
+*  Determining and documenting use requirements at each stage of the data life cycle facilitates effective data governance.
+*  An acceptable use policy (AUP) defines an individual's responsibilities when accessing, using, sharing, and removing organizational data.
+*  While an AUP is a document with a broad scope, it has provisions for each type of data in an organization's data classification matrix.
+*   AUPs describe acceptable locations for storing proprietary information; what to do in the event of theft, loss, or unauthorized disclosure; and methods of disposal.
+
+* Entity Relationship Requirements
+* Entity Relationship Diagrams (ERDs) give database designers a way of visualizing the relationships between individual entities in a standardized format.
+*  Also, recall that during design, you model data as entities and that at implementation time, ERD entities become database tables.
+*  Implementing foreign keys for the ERD relationships enforces data constraints.
+*  an entry in the Address table must have a state that exists in the State table. Enforcing these data constraints is crucial as you consider the data governance implications of ERDs.
+*  To avoid data linkage problems, organizations invest in data professionals who design analytical systems.
+
+* Data Classification Requirements
+* IData classification is the process of analyzing data and organizing it into risk-based categories.
+*  Classifying data is appropriate for both structured and unstructured data. When classifying data, you put data elements into one of four classifications
+
+# Understanding Master Data Management
+* Master data management (MDM) is a data governance discipline that uses processes, tools, and technologies to ensure that data assets across an organization have a single source of truth.
+* Successfully implementing MDM is a challenge regardless of industry or organizational size.
+* As organizational complexity increases, identifying and maintaining an accurate, consistent, well-governed single source of truth becomes more challenging.
+
+* Processes
+* The discipline of MDM is process-centric.
+*  For an organization with multiple separate operational systems, the consolidation of multiple data fields is part of a comprehensive duplicate resolution process.
+* Maintaining a data dictionary takes a significant effort.
+* Fortunately, tools exist that can extract most of the metadata about tables from a database.
+* It is crucial to instill procedural discipline for maintaining column-level comments since they help orient new analysts to your systems.
+* When designing the processes that maintain a data dictionary, it is vital to define which system is authoritative for shared data elements over time.
+
+* Circumstances
+* Many circumstances lead an organization to pursue MDM. Typically, leadership identifies a difficulty that relates to having consistent information.
+*  To improve internal efficiency and reduce data quality issues, leadership recognizes the benefits of enhancing consistency across systems.
+*  In addition, organizations want to streamline data access and realize that MDM can help them achieve this goal.
+*  another reason for adopting MDM is compliance with policies and regulations that require consistent handling of data.
+*   When the same data has different definitions in different systems, the cost of compliance increases.
+*   Using MDM to drive accurate and consistent data definitions leads to better data stewardship, which drives down the cost of compliance.
+ 
  
 
 
